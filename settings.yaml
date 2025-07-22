@@ -1,9 +1,9 @@
 db:
   - user: root
-    password: "123456"
+    password: 
     host: localhost
     port: 5432
-    database: parkinfo
+    database: 
     debug: false
     source: postgres
 log:
