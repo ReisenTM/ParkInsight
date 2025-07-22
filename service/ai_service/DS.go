@@ -20,7 +20,7 @@ func DSRequest(r Request) (res *http.Response, err error) {
 		logrus.Errorf("请求参数失败 %s", err)
 		return
 	}
-	req.Header.Add("Authorization", fmt.Sprintf("Bearer %s", "sk-c616351b2e194417b07b3b870d775e0d"))
+	req.Header.Add("Authorization", fmt.Sprintf("Bearer %s",))//API key
 	req.Header.Add("Content-Type", "application/json")
 
 	res, err = http.DefaultClient.Do(req)
